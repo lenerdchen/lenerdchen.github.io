@@ -102,6 +102,7 @@ b {
   margin: 0 20px;
 }
 
+.img-link,
 .img-link:hover {
   text-decoration: none;
   cursor: pointer;
