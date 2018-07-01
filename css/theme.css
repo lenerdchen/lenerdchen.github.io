@@ -71,6 +71,10 @@ b {
   padding-bottom: 80px;
 }
 
+.spacer-right {
+  padding-right: 20px;
+}
+
 .img-cropper {
   width: 200px;
   height: 200px;

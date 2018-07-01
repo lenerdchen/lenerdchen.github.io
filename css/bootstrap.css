@@ -1456,12 +1456,6 @@ img {
   transition: all .2s ease-in-out;
 }
 
-@media (max-width: 768px) and (min-width: 480px) {
-  .img-thumbnail {
-    max-width: 80%;
-  }
-}
-
 .img-circle {
   border-radius: 50%;
 }
@@ -5065,7 +5059,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .navbar-header {
     float: left;
   }
@@ -5270,7 +5264,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .navbar-nav {
     float: right;
     margin: 0;
