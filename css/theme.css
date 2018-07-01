@@ -67,6 +67,10 @@ b {
   padding-bottom: 20px;
 }
 
+.spacer-md {
+  padding-bottom: 40px;
+}
+
 .spacer-lg {
   padding-bottom: 80px;
 }
