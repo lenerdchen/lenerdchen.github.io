@@ -96,6 +96,12 @@ b {
   width: auto;
 }
 
+.img-article {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -110,4 +116,10 @@ b {
 .img-link:hover {
   text-decoration: none;
   cursor: pointer;
+}
+
+.caption {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
