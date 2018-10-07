@@ -12,27 +12,108 @@
 <body>
   <div class="wrapper">
 
-    <header>
+    <header role="header">
       <div class="hero">
-        <p>
-          <strong><a href="./index.html">Navigation</a></strong>
-        </p>
+        <h4>
+          <a href="./index.html" aria-label="Navigation Title">leonard chen</a>
+        </h4>
+        <p>UX designer, front-end hobbyist, kopi-c enthusiast</p>
       </div>
       <div class="links">
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
+        <ul role="navigation" aria-label="menu">
+          <li>
+            <h4>
+              <a href="./index.html" class="header--link-active" aria-label="selected works">work</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="./index.html" aria-label="about me">about</a>
+            </h4>
+          </li>
         </ul>
       </div>
     </header>
 
-    <main>
-      <h1>Main body</h1>
+    <main role="main">
+      <div class="main--title">
+        <h2>Hi! I'm Leonard</h2>
+        <h4>a <span class="body--text-primary">UX designer</span> passionate about the <span class="body--text-primary">public
+            good</span></h4>
+      </div>
+      <h3 class="main--subtitle">Selected Works</h3>
+      <div class="items-list">
+
+        <a href="./index.html" class="item--link">
+          <div class="item">
+            <div class="item--image">
+              <p>
+                Image
+              </p>
+            </div>
+            <div class="item--description">
+              <h4>Title</h4>
+              <p>Description</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./index.html" class="item--link">
+          <div class="item">
+            <div class="item--image">
+              <p>
+                Image
+              </p>
+            </div>
+            <div class="item--description">
+              <h4>Title</h4>
+              <p>Description</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./index.html" class="item--link">
+          <div class="item">
+            <div class="item--image">
+              <p>
+                Image
+              </p>
+            </div>
+            <div class="item--description">
+              <h4>Title</h4>
+              <p>Description</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./index.html" class="item--link">
+          <div class="item">
+            <div class="item--image">
+              <p>
+                Image
+              </p>
+            </div>
+            <div class="item--description">
+              <h4>Title</h4>
+              <p>Description</p>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
     </main>
 
-    <footer>
-      <p>
-        © Crafted by Leonard Chen in 2018
+    <footer role="content-info">
+      <div id="footer-icons">
+        <span></span>
+        <a href="./index.html" aria-label="instagram profile"><img src="./assets/insta.svg" alt="instagram logo" /></a>
+        <a href="./index.html" aria-label="linked in profile"><img src="./assets/linkedin.svg" alt="linked in logo" /></a>
+        <a href="./index.html" aria-label="medium page"><img src="./assets/medium.svg" alt="medium logo" /></a>
+        <span></span>
+      </div>
+      <p id="footer--text" aria-label="copyright information">
+        <strong>Crafted by ### © 2018</strong>
       </p>
     </footer>
 
