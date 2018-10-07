@@ -23,7 +23,19 @@ html {
 }
 
 body {
-    margin: 50px;
+    margin: 0 200px 0 200px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0 20px 0 20px;
+    }
 }
 
 /* Base fonts */
@@ -31,11 +43,13 @@ h1,
 h2,
 h3,
 h4 {
+    margin: 0;
     line-height: 1.2;
     font-weight: 800;
 }
 
 p {
+    margin: 0;
     line-height: 1.2;
     font-weight: 400;
 }
@@ -80,4 +94,54 @@ h4 {
     color: var(--secondary);
 }
 
-/* Other Stuff */
+/* grid */
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 20px;
+}
+
+/* navigation header */
+header {
+    background: var(--primary);
+    padding: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "title links";
+}
+
+header a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+header a:focus,
+a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links ul li {
+    display: flex;
+    margin: 0 0 0 10px;
+}
+
+/* main body */
+main {
+    background: var(--secondary);
+}
+
+/* footer */
+footer {
+    background: var(--black);
+    color: var(--white);
+    display: grid;
+    justify-items: center;
+}
