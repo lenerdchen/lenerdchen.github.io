@@ -1,0 +1,21 @@
+{
+    "name": "leonard-portfolio",
+    "version": "0.1.0",
+    "description": "Leonard's project portfolio",
+    "author": "Leonard Chen",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lenerdchen/site"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "run-script-os",
+        "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --port 7777",
+        "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --port 7777"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.5",
+        "run-script-os": "^1.0.3"
+    }
+}
