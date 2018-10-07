@@ -2,7 +2,7 @@
 :root {
     --white: #fbfcff;
     --black: #090c08;
-    --primary: #0e6ba8;
+    --primary: #2f80ed;
     --secondary: #00a896;
 }
 
@@ -10,8 +10,7 @@ html {
     /* border-box box model allows us to add padding and border to our elements without increasing their size */
     box-sizing: border-box;
     /* A system font stack so things load nice and quick! */
-    font-family: "Quattrocento Sans", "Noto Sans", Roboto, Helvetica, Arial,
-        sans-serif;
+    font-family: "Muli", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 600;
     color: var(--black);
     background-color: var(--white);
@@ -32,18 +31,17 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Lato";
-    font-weight: 700;
     line-height: 1.2;
+    font-weight: 800;
 }
 
 p {
-    font-family: "Noto Sans";
     line-height: 1.2;
+    font-weight: 400;
 }
 
 html {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 h1 {
@@ -64,13 +62,13 @@ h4 {
 
 @media (max-width: 1000px) {
     html {
-        font-size: 1.25em;
+        font-size: 1.125em;
     }
 }
 
 @media (max-width: 700px) {
     html {
-        font-size: 1.125em;
+        font-size: 1em;
     }
 }
 
@@ -81,3 +79,5 @@ h4 {
 .body--text-secondary {
     color: var(--secondary);
 }
+
+/* Other Stuff */
