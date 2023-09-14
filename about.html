@@ -1,101 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Leonard's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,800" rel="stylesheet">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/main.css" />
+		<link rel="stylesheet" href="/styles/about.css" />
+		<title>Leonard Chen - About Me</title>
+	</head>
+	<body class="content">
+		<header class="full">
+			<div class="nav">
+				<a class="nav-home" href="/index.html">Leonard Chen</a>
+				<div class="nav-items">
+					<a href="/portfolio.html">Portfolio</a>
+					<a href="/about.html">About Me</a>
+				</div>
+			</div>
+		</header>
 
-<body>
-  <div class="wrapper">
+		<div class="feature">
+			<h1 class="title">About Me</h1>
+			<p>
+				<strong>Hi there! I'm Leonard.</strong> I am passionate about user-centred design because it helps us empathise
+				deeply with our users and drive thoughtful trade-offs & decisions, to
+				create meaningful products that deliver value for the people who use
+				them.
+			</p>
+			<p>
+				I enjoy working with product & engineering leaders to tackle a common
+				problem using our unique perspectives and strengths. Together, we can
+				leave the world a little better than we found it.
+			</p>
+			<p>
+				If you'd like to collaborate, don't hesitate to reach out at <span id="email">chen.junhuo@gmail.com</span><button onClick="copyContent(); changeText('email-button', 'Copied!', 'Copy email');" id="email-button">Copy email</button></p>
 
-    <header role="header">
-      <div class="header-content">
-        <div class="hero">
-          <h4>
-            <a href="../index.html" aria-label="Navigation Title">leonard chen</a>
-          </h4>
-          <p>UX designer<br>kopi-c enthusiast</p>
-        </div>
-        <div class="links">
-          <ul role="navigation" aria-label="menu">
-            <li>
-              <h4>
-                <a href="../index.html" aria-label="selected works">work</a>
-              </h4>
-            </li>
-            <li>
-              <h4>
-                <a href="../writing.html" aria-label="selected writing">writing</a>
-              </h4>
-            </li>
-            <li>
-              <h4>
-                <a href="../about.html" class="header--link-active" aria-label="about me">about</a>
-              </h4>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+		</div>
 
-    <main role="main" class="article">
-      <div class="main--title">
-        <h2>
-          About
-        </h2>
-        <br />
-        <h4>I believe design is how we can <span class="body--text-primary">make impact</span> on the public good <span
-            class="body--text-primary">at scale</span></h4>
-      </div>
-      <img class="article--image" src="https://source.unsplash.com/random/600x400">
-      <p>
-        I'm a user experience designer, with a focus on user research, product design, and product strategy, working
-        for the
-        <a href="https://www.tech.gov.sg" target="_blank">Singapore Government</a>.
-      </p>
-      <p>
-        My journey in design began with studying the psychology of how people decide to help their close friends and
-        random
-        strangers.
-        I then progressed to understanding how communities interact and make joint decisions on their community budget
-        and
-        allocation for public services.
-      </p>
-      <p class="body--text-quote">
-        Designing for the public good is the perfect intersection of my passions in
-        psychology
-        and the community.
-      </p>
-      <p>
-        For fun, I practice capoeira, go on long runs, and hunt down a good cup of kopi-c siu dai. Feel free to learn
-        more
-        about
-        me and my thoughts on
-        <a href="https://medium.com/@lenerdchen" target="_blank">Medium</a> and
-        <a href="https://www.instagram.com/lenerdchen/" target="_blank">Instagram</a>!
-      </p>
-      <p>You can also <a href="../assets/Leonard Chen Resume.png">download my CV</a> for reference.</p>
-    </main>
+		<div>
+			<h4>Professional journey & growth</h4>
 
-    <footer role="content-info">
-      <div id="footer-icons">
-        <a href="https://www.instagram.com/lenerdchen" target="_blank" aria-label="instagram profile"><img src="../assets/insta.svg"
-            alt="instagram logo" /></a>
-        <a href="https://www.linkedin.com/in/leonard-chen-86174295" target="_blank" aria-label="linked in profile"><img
-            src="../assets/linkedin.svg" alt="linked in logo" /></a>
-        <a href="https://www.medium.com/@lenerdchen" target="_blank" aria-label="medium page"><img src="../assets/medium.svg"
-            alt="medium logo" /></a>
-        <p id="footer--text" aria-label="copyright information">
-          <strong>Crafted by Leonard © 2018</strong>
-        </p>
-      </div>
-    </footer>
+			<div class="resume">
+				<div class="heading small-bottom">
+					Behavioural Insights Lead
+					<div class="small">Public Service Division (Singapore)</div>
+				</div>
+				<div class="heading">
+					Design Lead
+					<div class="small">Government Technology Agency (Singapore)</div>
+				</div>
+				<p class="descriptor">In my first roles, I learned how to
+					<div class="descriptor-title">
+						Place citizens at the centre of decision-making & design
+					</div>
+					<ul class="small-top">
+						<li>Redesigned the public housing purchase & selling service that halved transaction times from 16 to 8 weeks.</li>
+						<li>Launched a single-stop portal that consolidated 7 end-of-life services into a single portal, eliminating all other touch-points that citizens had to interact with.</li>
+					</ul>
+				</p>
+			</div>
 
-  </div>
-</body>
+			<div class="resume">
+				<div class="heading">
+					Senior UX Researcher
+					<div class="small">Dyson Technology</div>
+				</div>
+				<p class="descriptor">I moved on to learn how to
+					<div class="descriptor-title">
+						Balance user needs & outcomes against business needs
+					</div>
+					<ul class="small-top">
+						<li>Refreshed the product page format on Dyson.com that drove +68.4% conversion rate & +50% revenue, and simplified the navigation structure that reduced homepage to checkout drop-off by 18%.</li>
+						<li>Led the development of refreshed Customer Support experience, which drove +175% registration rate and reduced bounce rate on product support pages by ~70%.</li>
+						<li>Launched a global user research community with 117 members across 10 markets, serving as the central resource on research methods, operations, and testing tools.</li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="resume">
+				<div class="heading">
+					UX Design Manager
+					<div class="small">ExpressVPN</div>
+				</div>
+				<p class="descriptor">My next step was to
+					<div class="descriptor-title">
+						Use design to influence strategic business & product decisions
+					</div>
+					<ul class="small-top">
+						<li>Drove the product strategy & experience vision process, partnering with the Chief Product Officer and VPs of Design & Engineering to establish product principles, and identified 9 new product opportunities. </li>
+						<li>Established a problem-solution hypothesis framework to ensure insights were translated into feature ideas & experiments; scaled across 4 acquisition & retention teams and increased experiment win rates by ~50%. </li>
+						<li>Drove a democratisation programme to scale research across the entire organisation; built a research repository used by more than 80 stakeholders, and trained 10 designers on research planning, conduct, and analysis. </li>
+					</ul>
+				</p>
+			</div>
+
+		</div>
+
+		<div>
+			<h4>Education</h4>
+
+			<div class="resume">
+				<div class="heading">
+					Brown University, Class of 2013
+					<div class="small">Bachelor's in Psychology & Urban Studies</div>
+				</div>
+				<p>
+					GPA: 3.94/4.00<br />
+					Magna Cum Laude & Phi Beta Kappa Honours in Psychology & Winner of the
+					Muriel Fain Sher Memorial Premium in Psychology
+				</p>
+			</div>
+
+			<div class="resume">
+				<div class="heading">
+					Universitat Autònoma de Barcelona, Class of 2014
+					<div class="small">Masters in Political Science</div>
+				</div>
+				<p>
+					Grade: 9.4/10.0 <br/>
+					Masters Thesis: “Towards a Systematic Analysis of the Legitimacy of Participatory Urban Governance”
+				</p>
+			</div>
+
+			<div>
+				<h4>Publications</h4>
+
+				<div class="resume">
+					<p>
+						Krueger, J., Ullrich, J., & Chen, L. (2016). Expectations and decisions in the Volunteer’s Dilemma: Effects of social distance and social projection. <em>Frontiers in Psychology</em>, 7:1909.
+<a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2016.01909" target="_blank">doi: 10.3389/fpsyg.2016.01909.</a>
+					</p>
+				</div>
+				<div class="resume">
+					<p>
+						Krueger, J., & Chen, L. (2014). The first cut is the deepest: Projection and accuracy in social perception. <em>Social Cognition</em>, 32(4):315-336. <a href="https://psycnet.apa.org/record/2014-34316-001" target="_blank"> doi: 10.1521/soco.2014.32.4.315</a>
+					</p>
+				</div>
+			</div>
+
+			<div>
+				<h4>Skills & Certifications</h4>
+
+				<div class="resume">
+					<div class="heading">
+						Business Strategy & Design
+						<br />
+						<div class=small>d.MBA Programme, Nov 2022</div>
+					</div>
+					<p>
+						Business empathy, strategy, financials, and models
+					</p>
+				</div>
+				<div class="resume">
+					<div class="heading">
+						Advanced Approaches to UX Research
+						<br />
+						<div class=small>Centre Center UIE, May 2022</div>
+					</div>
+					<p>
+						Research strategies, product roadmapping, stakeholder & executive management, and continuous research
+					</p>
+				</div>
+				<div class="resume">
+					<div class="heading">
+						Ethical Design Masterclass
+						<br />
+						<div class=small>Smashing Conference, Mar 2022</div>
+					</div>
+					<p>
+						Ethical design patterns, practices, and measurement
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="end-block">
+			<a href="#top">Back to top</a>
+		</div>
+	</body>
+
+	<script>
+		let text = document.getElementById('email').innerHTML;
+		const copyContent = async () => {
+			try {
+				await navigator.clipboard.writeText(text);
+				console.log('Content copied to clipboard');
+			} catch (err) {
+				console.error('Failed to copy: ', err);
+			}
+		}
+		function changeText(button, text, textToChangeBackTo) {
+			buttonId = document.getElementById(button);
+  		buttonId.textContent = text;
+  		setTimeout(function() { back(buttonId, textToChangeBackTo); }, 2000);
+  		function back(button, textToChangeBackTo){ button.textContent = textToChangeBackTo; }
+		}
+	</script>
 
 </html>
