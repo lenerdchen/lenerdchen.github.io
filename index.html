@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/main.css" />
+		<link rel="stylesheet" href="/styles/home.css" />
+		<title>Leonard Chen</title>
+	</head>
+	<body class="content">
+		<header class="full">
+			<div class="nav">
+				<a class="nav-home" href="/index.html">Leonard Chen</a>
+				<div class="nav-items">
+					<a href="/portfolio.html">Portfolio</a>
+					<a href="/about.html">About Me</a>
+				</div>
+			</div>
+		</header>
+
+		<div class="feature hero">
+			<h1 class="title title-one">
+				Hello!<br />
+				<span class="title-two">I'm Leonard</span>
+			</h1>
+			<p class="subtitle">
+				I'm a design leader with 10+ years of experience driving
+				cross-functional collaboration, product thinking & user impact.
+			</p>
+			<p>
+				<strong>
+					I believe in having strong opinions, loosely held. Let's work together
+					& challenge each other to deliver the greatest impact.
+				</strong>
+			</p>
+		</div>
+
+		<div class="feature cards">
+			<a href="/portfolio.html">
+				<div class="card card-one">
+					<h4 class="card-title">Portfolio</h4>
+					<p>Review a selection of past work, contributions, and impact.</p>
+				</div>
+			</a>
+			<a href="about.html">
+				<div class="card card-two">
+					<h4 class="card-title">About Me</h4>
+					<p>Learn about my professional journey & growth.</p>
+				</div>
+			</a>
+		</div>
+
+		<div class="end-block">
+			<p class="end-text">
+				Leonard Chen (2023)
+				<span id="email" style="display: none">chen.junhuo@gmail.com</span>
+				<button
+					onClick="copyContent(); changeText('email-button', 'Copied!', 'Copy email');"
+					id="email-button"
+				>
+					Copy email
+				</button>
+			</p>
+		</div>
+	</body>
+
+	<script>
+		let text = document.getElementById("email").innerHTML;
+		const copyContent = async () => {
+			try {
+				await navigator.clipboard.writeText(text);
+				console.log("Content copied to clipboard");
+			} catch (err) {
+				console.error("Failed to copy: ", err);
+			}
+		};
+		function changeText(button, text, textToChangeBackTo) {
+			buttonId = document.getElementById(button);
+			buttonId.textContent = text;
+			setTimeout(function () {
+				back(buttonId, textToChangeBackTo);
+			}, 2000);
+			function back(button, textToChangeBackTo) {
+				button.textContent = textToChangeBackTo;
+			}
+		}
+	</script>
+</html>

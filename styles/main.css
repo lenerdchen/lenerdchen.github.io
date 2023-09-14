@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Poppins:wght@500;600&display=swap");
+
+/*base styles*/
+
+* {
+	box-sizing: border-box;
+	--black: #292f36;
+	--mint: #1ea896;
+	--white: #ffffff;
+	--grey: #979797;
+	--light-grey: #f9f9f9;
+	--light-mint: #f4fbfa;
+
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 100%; /*16px*/
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+	html {
+		font-size: 87.5%;
+	} /*14px*/
+}
+
+body {
+	background: white;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	color: var(--black);
+}
+
+p {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 3rem 0 1.38rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	line-height: 1.3;
+	color: var(--mint);
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 4.209rem;
+}
+
+h2 {
+	margin-top: 0;
+	font-size: 3.157rem;
+}
+
+h3 {
+	font-size: 2.369rem;
+}
+
+h4 {
+	font-size: 1.777rem;
+}
+
+h5 {
+	font-size: 1.333rem;
+}
+
+small,
+.small {
+	font-weight: 600;
+	color: var(--grey);
+}
+
+a {
+	color: var(--mint);
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding-inline-start: 1rem;
+}
+
+li {
+	padding-bottom: 1rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content {
+	--gap: clamp(1rem, 6vw, 3rem);
+	--full: minmax(var(--gap), 1fr);
+	--content: min(56ch, 100% - var(--gap) * 2);
+	--popout: minmax(0, 2rem);
+	--feature: minmax(0, 5rem);
+
+	display: grid;
+	grid-template-columns:
+		[full-start] var(--full)
+		[feature-start] var(--feature)
+		[popout-start] var(--popout)
+		[content-start] var(--content) [content-end]
+		var(--popout) [popout-end]
+		var(--feature) [feature-end]
+		var(--full) [full-end];
+}
+
+.content > * {
+	grid-column: content;
+}
+
+.popout {
+	grid-column: popout;
+}
+
+.feature {
+	grid-column: feature;
+}
+
+.full {
+	grid-column: full;
+}
+
+/* end-block items */
+.end-block {
+	justify-self: center;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.end-items {
+	display: grid;
+	grid-auto-columns: minmax(min-content, max-content);
+	grid-auto-flow: column;
+	grid-gap: 30px;
+	place-items: center;
+}
+
+/*nav bar styles*/
+header {
+	display: grid;
+	grid-template-rows: minmax(min-content, 60px);
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	background-color: var(--light-grey);
+	padding: 0 1rem;
+}
+
+.nav {
+	align-content: space-evenly;
+	vertical-align: baseline;
+	display: grid;
+	grid-auto-flow: column;
+	place-items: center;
+}
+
+a.nav-home {
+	margin: 0;
+	justify-self: left;
+	color: var(--mint);
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.nav-items {
+	display: grid;
+	grid-auto-columns: minmax(min-content, max-content);
+	grid-auto-flow: column;
+	grid-gap: 15px;
+	place-items: center;
+	justify-self: right;
+}
+
+.nav-items a {
+	color: var(--black);
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+/* Change the link color on hover */
+a.nav-home:hover {
+	color: var(--black);
+}
+
+.nav-items a:hover {
+	color: var(--mint);
+}
+
+/* Special style */
+.title {
+	margin-top: 2rem;
+}
+
+.title-one {
+	line-height: 1.15;
+	color: var(--black);
+}
+.title-two {
+	color: var(--mint);
+}
+
+/* email button */
+#email {
+	font-weight: 500;
+	padding-right: 0.5rem;
+}
+
+#email-button {
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 100%;
+	/* border-color: var(--grey); */
+	color: var(--grey);
+	/* border-style: solid; */
+	border: none;
+	/* border-width: 1.5px; */
+	background-color: var(--white);
+	/* border-radius: 8px; */
+	padding: 0;
+	cursor: pointer;
+	text-decoration: underline;
+}
