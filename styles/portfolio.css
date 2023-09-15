@@ -48,3 +48,46 @@
   font-size: 0.8rem;
   color: var(--grey);
 }
+
+.password-form {
+  width: 100%;
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 3fr 1fr;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .password-form {
+    grid-template-columns: none;
+  }
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+input[type="password"] {
+  border-radius: 8px;
+  border: none;
+  /* border-width: 2px;
+  border-color: var(--light-grey); */
+  background-color: var(--light-grey);
+  padding: 0.8rem;
+}
+
+input[type="submit"] {
+  border-radius: 8px;
+  border: none;
+  /* border-width: 2px;
+  border-color: var(--light-grey); */
+  background-color: var(--light-mint);
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
