@@ -1,53 +1,54 @@
 .hero {
-	margin: 2rem 0 2rem;
+  margin: 2rem 0 2rem;
 }
 .cards {
-	width: 100%;
-	margin: 0 auto 2rem;
-	display: grid;
-	gap: 1.5rem;
-	grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Mobile */
 @media screen and (max-width: 700px) {
-	.cards {
-		gap: 3rem;
-		grid-template-columns: none;
-	}
+  .cards {
+    gap: 3rem;
+    grid-template-columns: none;
+  }
 }
 
 .card {
-	border-radius: 1rem;
-	cursor: pointer;
-	padding: 3rem 1.5rem 1rem;
-	transition: all 0.3s ease;
-	color: var(--black);
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 3rem 1.5rem 1rem;
+  transition: all 0.3s ease;
+  color: var(--black);
 }
 
 .card:hover {
-	transform: translateY(-2px);
-	box-shadow: 0px 10px 20px 2px rgb(230, 230, 230, 95);
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px 2px rgb(230, 230, 230, 95);
 }
 
 .card:hover h4 {
-	color: var(--mint);
+  color: var(--mint);
 }
 
 .card-one {
-	background-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
 
 .card-two {
-	background-color: var(--light-mint);
+  background-color: var(--light-mint);
 }
 
 .card-title {
-	margin-top: 0;
-	color: var(--black);
-	transition: all 0.3s ease;
+  margin-top: 0;
+  color: var(--black);
+  transition: all 0.3s ease;
 }
 
 .end-text {
-	color: var(--grey);
+  color: var(--grey);
+  justify-self: center;
 }

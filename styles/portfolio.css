@@ -1,43 +1,50 @@
 .case-section {
-	margin: 3rem 0 1rem;
+  margin: 3rem 0 1rem;
 }
 
 .case-title {
-	margin-top: 0;
-	color: var(--black);
+  margin-top: 0;
+  color: var(--black);
 }
 
 .case-image {
-	margin-bottom: 1rem;
+  justify-self: center;
+  margin-bottom: 1rem;
 }
 
 .portfolio-section {
-	border-style: solid;
-	border-color: var(--grey);
-	border-radius: 8px;
-	padding: 1rem;
-	transition: all 0.3s ease;
-	cursor: pointer;
+  /* border-style: solid;
+	border-color: var(--grey); */
+  background-color: var(--light-grey);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .portfolio-title {
-	margin-top: 0rem;
-	margin-bottom: 1rem;
-	color: var(--black);
-	transition: all 0.3s ease;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  color: var(--black);
+  transition: all 0.3s ease;
 }
 
 .portfolio-section:hover {
-	border-color: var(--mint);
-	transform: translateY(-2px);
-	box-shadow: 0px 10px 20px 2px rgb(230, 230, 230, 95);
+  /* border-color: var(--mint); */
+  background-color: var(--light-mint);
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px 2px rgb(230, 230, 230, 95);
 }
 
 .portfolio-section:hover h5 {
-	color: var(--mint);
+  color: var(--mint);
+}
+
+.end-section {
+  margin-bottom: 3rem;
 }
 
 .descriptor {
-	font-size: 0.8rem;
-	color: var(--grey);
+  font-size: 0.8rem;
+  color: var(--grey);
 }
