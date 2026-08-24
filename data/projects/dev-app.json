@@ -1,0 +1,95 @@
+{
+  "slug": "dev-app",
+  "title": "Defining a scalable analytics and diagnostics tool for developers",
+  "summary": "Designing an insights-driven diagnostic tool to improve the go-live experience for Airwallex's developer users. Pending launch in Q3 2026.",
+  "sections": [
+    {
+      "blocks": [
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/dev-app/app.png", "alt": "Airwallex Developer app", "caption": "Airwallex's Developer tool — upgrading from a minimal settings page to a self-service diagnostic tool"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Context & Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Airwallex is a global payments platform. Developers integrate with our APIs to move money — take a payment, issue a refund, pay a supplier in another currency.\n\n\n\nHowever, when a developer's integration broke, they had no good insight as to why. They had to rely on poorly written error codes and documentation, or reach out to support or their Solution Engineers to ask for help. Key customers were asking for observability tools to help them investigate their integrations, and ~14% of queries to our Documentation AI Assistant were unresolvable because they were questions on how to troubleshoot their specific integration errors.\n\nOur goal was to turn this frustrating experience into a seamless, self-service experience for developers to diagnose and fix issues themselves."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/dev-app/before.png", "alt": "Configuration-only Developer app", "caption": "Before this project, the Developer app was a minimal settings page - just a way to configure API keys and webhooks."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Building design foundations",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "I see the role of design in the product team as helping to build a solid design foundation that anchors the product and guides the team's decisions. \n\nSynthesising product & market strategy from our commercial team, insights from our solution engineers, and direct conversations with our customers, I defined our core personas, their user journeys, and the product and design principles that could shape our solution approach. \n\nThis set the stage for the rest of the project - ensuring we were all aligned on the problem we were solving, and the approach we were taking to solve it."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/dev-app/design-strategy.png", "alt": "Design strategy artefacts", "caption": "Building a solid design foundation for the project by defining our personas, their user journeys, and the product and design principles shaping our solution approach."}
+          ]
+        }        
+      ]
+    },
+    {
+      "title": "Insight over observability",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "There were many parts to this project - adding observability with logs and events, improving diagnostics by providing a real-time dashboard of API and webhook performance, and re-architecting the information architecture to link all these parts together. \n\nThe most interesting challenge though was how we could add value by providing insights on top of the data. It's easy to show someone a list of failed requests. The value we wanted to add was one level up: Here is the pattern in your failures, and here's what to do about it.\n\nWe started from first principles - what is even an insight? Engineering partnership was critical to give us the lay of all available data signals, and product guidance helped set up guardrails for what are meaningful data patterns and triggers to alert our customers to. My role was to piece everything together - balancing issue severity, recency, and frequency in order to call developers' attention to the most important problem to fix, and providing enough context on the related logs or events to help them understand the root cause and resolve the issue.\n\nOne of the key insights as we iterated and tested with our customers was that we needed to provide a tiered insight model. Not all issues are equal - it was critical that we help them distinguish between something that was a critical infrastructure problem, a user error in shaping their API call, or simplya recommendation for better integration patterns to improve their outcomes."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/dev-app/whiteboarding.png", "alt": "Whiteboarding session of the data schema", "caption": "Driving a whiteboarding session with Product & Engineering to define what an insight looks like."},
+            {"src": "images/dev-app/data-model.png", "alt": "Synthesised data schema", "caption": "Defining a object data model & schema that we could scale across domains sustainably."},
+            {"src": "images/dev-app/issues.png", "alt": "Integration issues sorted by severity", "caption": "Designing a scalable issue template to present issues by severity, and provide enough context to help developers understand root cause and resolve the issue."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scaling with AI", 
+      "blocks": [
+        {
+          "type": "text",
+          "content": "My team owns the Developer platform; but the API endpoints and how they behave originate from each technical domain of Payments, Payouts, Billing, etc. We needed to design a solution that would scale across domains and over time, autonomously. \n\nInstead of hand-crafting every issue type for each domain, we leveraged existing API documentation & best practices to automatically generate a tailored recommendation for each issue. Domain teams just needed to connect their logs to our Developer platform, and we would do the rest.\n\nMy role was to piece everything together - balancing issue severity, recency, and frequency in order to call developers' attention to the most important problem to fix, and providing enough context on the related logs or events to help them understand the root cause and resolve the issue."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {
+              "type": "video",
+              "src": "images/dev-app/recording-web.mp4",
+              "poster": "images/dev-app/app.png",
+              "alt": "Demonstration of the issue investigation flow",
+              "caption": "Incrementally revealing more information about the issue to the user, and allowing them to leverage AI assistants to futher query and resolve the issue."
+            },
+            {"src": "images/dev-app/recommendations.png", "alt": "Presenting recommendations generated by AI", "caption": "Iterating on presentation styles for AI-generated recommendations - focusing users on the action needed over the need to add AI sparkles."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How we know it'll work",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The product is currently in build, and will be launched in Q3 2026. To measure our success, we'll be tracking the following metrics:\n\n- Number of support queries related to specific developer integration issues\n\n- Number of issues escalated to support & Solution Engineers\n\n- Time to go-live from creating sandbox account to first production API call\n\nWe're excited to see how our enhanced tooling will help our developer diagnose and fix issues, and allow them to go live and achieve their own goals!"
+        }
+      ]
+    }
+  ]
+}

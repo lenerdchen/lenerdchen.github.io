@@ -1,0 +1,90 @@
+{
+  "slug": "mobile-pos-terminal",
+  "title": "Launching Airwallex's first-ever physical payments touchpoint",
+  "summary": "Designing the end-to-end experience for Airwallex's point-of-sale terminal — the company's first-ever physical touchpoint. Launched across Australia, Hong Kong, and Singapore, with 123 active merchants processing over USD 20M monthly.",
+  "sections": [
+    {
+      "blocks": [
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/mobile-pos/pos8.png", "alt": "Airwallex POS terminal", "caption": "Airwallex's POS terminal — our first-ever physical payments touchpoint."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Context & Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "For merchants selling both online and in-store, payments are often split across separate providers — one system for e-commerce, another for the brick-and-mortar store. That fragmentation creates real friction: a customer who swipes their card in-store can't easily use it for online purchases later, and refunding an online order from a physical location becomes an operational headache.\n\nAirwallex had a strong online payments product, but no physical touchpoint. Building one would let merchants manage online and in-store payments through a single integration — saving a card swiped at the counter for future online use, handling omnichannel refunds seamlessly, and giving platforms like gym management or restaurant software a single embedded payments provider across channels.\n\nThe design challenge was clear: we were entering a mature market, competing with other providers with years of experience and depth of features. My job was to differentiate through a better merchant and end-customer experience — making the core flows of setting up and operating a terminal feel simple for both mom-and-pop store owners and big-chain retailers & staff, and ensuring they never miss a payment from their customers in store."
+        }
+      ]
+    },
+    {
+      "title": "Discovery",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "We identified two core merchant segments: large enterprises with mature order systems that integrate directly with the terminal, and mid-size businesses that use the POS device standalone in-store. Through interviews and journey mapping, we mapped how terminal management and operation would fit into their daily procedures.\n\nThe segments cared about different things. Larger merchants focused on device management and control — who can activate the terminal, who can process refunds, and how to set tiered permissions for store managers versus front-line staff. Smaller merchants prioritised ease of use in the moment — entering the right amount, handling a failed payment, retrying a transaction, and reconciling what the terminal received against what they see in the web dashboard at the end of the day.\n\nThe research didn't reframe the problem so much as sharpen the focus. We tend to think of POS as a simple tap-to-pay interaction, but there are all these wraparound moments of daily operation — opening up, managing permissions, closing the books — that cause real papercuts if they're not designed thoughtfully. Those became our design priorities."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/mobile-pos/pos0.png", "alt": "POS discovery research", "caption": "Collaborating with product & commercial teams to define our ideal customer segment"},
+            {"src": "images/mobile-pos/pos1.png", "alt": "POS discovery research", "caption": "Building object-data relationships to define the information to present to merchants and customers"},
+            {"src": "images/mobile-pos/pos2.png", "alt": "POS discovery research", "caption": "Iteratively mapping key user journeys, increasing in fidelity as we research and design each flow"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Design Decisions",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The first challenge was device activation. Pairing a terminal is inherently a two-sided process — powering on the device to get a pairing code, then logging into the web dashboard to register it. We kept that moment as stripped-back as possible: enter the code, and you're live. Everything else — terminal nickname, location, team permissions — gets pushed into post-activation settings. On the device itself, the only setup step we prioritised was the security PIN. Payment and refund passcode controls matter, but we made them skippable so merchants aren't pressured into configuring everything before they've even processed their first transaction.\n\nThe second was defining how merchants navigate the terminal day-to-day. The device does more than collect payments — it's also where merchants handle refunds, view transaction history, and reconcile at the end of the day. We needed a clear information hierarchy across these operations, but we also recognised that terminal use is spiky: a merchant collects payments for a burst, then switches to a different task. Rather than always returning to a static home menu, we designed the resting state to default to what the user was last doing — usually collecting a new payment. The interface adapts to the rhythm of the merchant's day, rather than imposing its own."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/mobile-pos/pos4.png", "alt": "POS registration and set-up flow", "caption": "Designing a minimal registration & set-up flow to get merchants to the \"a-ha\" moment of collecting payments as quickly as possible, while ensuring we handle any failure scenarios gracefully."},
+            {"src": "images/mobile-pos/pos7.png", "alt": "POS app structure", "caption": "Building an app structure that allows for flexible use cases, while designing the experience to be seamless in day-to-day operations."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Solution",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The solution is shaped by three principles drawn from our research. The first is designing for non-expert store staff. Front-line staff often have limited payment knowledge and no access to the web dashboard, so the terminal experience needs to be self-explanatory. Every core flow — collecting a payment, cancelling a transaction, processing a refund — works end-to-end on the device without needing another tool.\n\nThe second is clarity at the point of payment. Checkout is a high-stakes moment for both the merchant and the customer, so we minimised noise: currency is de-emphasised on single-currency terminals, the PIN screen shows only the last four digits, and we chose approachable labels like \"Initiate refund\" instead of \"Refund payment.\" Small choices, but they reduce hesitation for staff processing transactions under pressure.\n\nThe third is trust through transparent history. Transaction history lives on the device, including failed payments and the reasons they failed. Statuses update live in both directions between the terminal and the web dashboard, so merchants can reconcile at the end of the day and handle in-store disputes with confidence. The terminal isn't just a payment tool — it's the merchant's source of truth at the counter."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/mobile-pos/pos5.png", "alt": "POS payment flow and error handling", "caption": "Ensuring the moment of payment is as intuitive as possible, and providing contextual, informative error messages so both merchant and customers know how to resolve issues on the spot."},
+            {"src": "images/mobile-pos/pos3.png", "alt": "POS refund flow", "caption": "Back-of-house processes like refunds can also be initiated from the terminal, with clear messaging for successful & failed scenarios."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Key Learnings",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The product launched across Australia, Hong Kong, and Singapore — Airwallex's first-ever physical payments touchpoint. 123 active merchants now process over USD 20M monthly through the terminal.\n\nDesigning for a mobile device and designing for a point-of-sale terminal are different problems. The context of use matters as much as the interface: busy, fast-paced interactions where the device is handed back and forth between staff and customer, often at arm's length. Designs need to be large, simple, and unmistakable — especially when errors occur and someone needs to recover quickly without hesitation.\n\nI also learned not to be intimidated by mature markets. Through deep empathy and a genuine understanding of unmet pain points, you can identify insights that enable a differentiated product — one that integrates more thoughtfully into merchants' day-to-day workflows than incumbents who've had years to grow comfortable with the status quo."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/mobile-pos/pos6.png", "alt": "POS design system", "caption": "Building and documenting a POS-specific design system to allow the team to quickly scale across more complex flows."}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "disputes",
+  "title": "Empowering merchants to manage complex transaction disputes",
+  "summary": "Designing a comprehensive dispute management tool that empowers merchants to make informed decisions when managing disputes and reduce losses.",
+  "sections": [
+    {
+      "blocks": [
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/disputes/app.png", "alt": "Airwallex Dispute details", "caption": "Airwallex's Dispute management tool — enabling merchants to make informed decisions to challenge or accept dispures and manage their loss exposure."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Context & Challenge",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Disputes are a significant source of lost revenue; managing them in a timely, effective manner takes up merchants’ time & resources.\n\nWhile they can challenge these disputes, small & mid-sized merchants struggle to understand why or how they should challenge a dispute, leading to more fees & losses. Our challenge was to empower merchants to make informed decisions when managing disputes, increasing their accuracy of when to challenge a dispute, and increasing their likelihood of winning a challenge."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/disputes/flow.png", "alt": "Dispute management flow", "caption": "Dispute management is a complex, multi-party process."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Embracing the complexity",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "There are many reasons why a customer may raise a dispute, and many reasons why merchants may want to challenge that dispute. I worked with our Product Manager and Englneering Lead to gain a deep understanding of the dispute system, across the range of products or services.\n\nWe discovered that while the system was dense, it could be narrowed down into areas where common evidence were needed versus scenarios where unique information were required. This allowed us to simplify the challenge process into a step-by-step, guided experience based on a few diagnostic questions. "
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/disputes/map.png", "alt": "Map of evidence required", "caption": "Mapping all the evidence required to challenge a dispute, depending on the product type, reason for customer raising the dispute, and merchant challenging the dispute."},
+            {"src": "images/disputes/task.png", "alt": "Diagnostic questions to create a guided challenge flow", "caption": "Using simple diagnostic questions to guide merchants towards the appropriate evidence to support their challenge."}
+          ]
+        }        
+      ]
+    },
+    {
+      "title": "Management, not just facilitation",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The challenge we put to ourselves was how could we design not only to facilitate, but to manage disputes on behalf of the merchants? We had the opportunity to not only make it easier to challenge disputes, but design a smarter service that could take the guesswork out of deciding whether or not challenge the dispute in the first place. \n\nI redesigned the dispute overview to nudge merchants towards challenging a despite if they had a high chance of success, and provided them with the appropriate evidence to support their challenge."
+        },
+        {
+          "type": "carousel",
+          "images": [
+            {"src": "images/disputes/tools.png", "alt": "Dispute overview with nudge mechanisms", "caption": "Recommendations, related past orders, and matching criteria help merchants decide to challenge with confidence that they can win."}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Driving delight and retention",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The redesigned dispute management drove 15% higher accept ratio as merchants became more informed and prudent; where merchants did challenge a dispute, we saw a 50% higher win ratio.\n\nWhile projects like these do not drive new user acquisition or revenue, they improve the experience and retention of our merchants as they see the added value of using Airwallex’s platform to manage their financial operations. "
+        }
+      ]
+    }
+  ]
+}

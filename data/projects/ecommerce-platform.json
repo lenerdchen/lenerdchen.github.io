@@ -1,0 +1,62 @@
+{
+  "slug": "ecommerce-platform",
+  "title": "E-Commerce Platform",
+  "summary": "A full-featured online shopping platform with cart functionality, payment integration, and admin dashboard designed to provide seamless shopping experiences.",
+  "sections": [
+    {
+      "title": "Project Overview",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This project was initiated to create a modern e-commerce solution that could handle high traffic while providing an intuitive user experience. The platform needed to support multiple payment methods, real-time inventory management, and a robust admin interface.\n\nWorking with a team of developers and stakeholders, I led the design process from initial research through to final implementation, ensuring the platform met both business objectives and user needs."
+        }
+      ]
+    },
+    {
+      "title": "Design Process",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "We began with comprehensive user research to understand shopping behaviors and pain points. Through interviews and usability testing with 20+ participants, we identified key areas for improvement in the checkout flow and product discovery."
+        },
+        {
+          "type": "image",
+          "src": "images/ecommerce/test-image.jpg",
+          "alt": "Early wireframe sketches",
+          "caption": "Initial wireframe exploration for the checkout flow"
+        },
+        {
+          "type": "text",
+          "content": "The wireframes evolved through multiple iterations based on feedback from stakeholders and user testing sessions. We prioritized simplicity and clarity, reducing the checkout process from 5 steps to 3 while maintaining all necessary information gathering."
+        }
+      ]
+    },
+    {
+      "title": "Technical Implementation",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The platform was built using Node.js for the backend with MongoDB for data persistence. The frontend utilized vanilla JavaScript with a component-based architecture to ensure maintainability and performance.\n\nKey technical features included real-time inventory synchronization, secure payment processing through Stripe integration, and an optimized image delivery system that reduced page load times by 40%."
+        }
+      ]
+    },
+    {
+      "title": "Outcomes",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The platform successfully launched and processed over $500K in transactions within the first three months. User testing showed a 45% improvement in checkout completion rates compared to the previous system. The admin dashboard reduced inventory management time by 60%, allowing staff to focus on customer service."
+        }
+      ]
+    },
+    {
+      "title": "Key Learnings",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This project reinforced the importance of iterative design and continuous user feedback. Early prototyping revealed assumptions that would have been costly to fix later. Additionally, close collaboration with the development team from the start helped us make informed design decisions that balanced user experience with technical feasibility."
+        }
+      ]
+    }
+  ]
+}

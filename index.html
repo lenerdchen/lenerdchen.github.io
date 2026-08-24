@@ -1,88 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/home.css" />
-    <title>Leonard Chen</title>
-  </head>
-  <body class="content">
-    <header class="full">
-      <div class="nav">
-        <a class="nav-home" href="/index.html">Leonard Chen</a>
-        <div class="nav-items">
-          <a href="/portfolio.html">Portfolio</a>
-          <a href="/about.html">About Me</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leonard Chen - Portfolio Website">
+    <title>Leonard Chen | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section / Header -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title"><a href="./">Leonard Chen</a></h1>
+                <p class="hero-subtitle">Product Design, Research, Strategy</p>
+            </div>
         </div>
-      </div>
     </header>
 
-    <div class="feature hero">
-      <h1 class="title title-one">
-        Hello!<br />
-        <span class="title-two">I'm Leonard</span>
-      </h1>
-      <p class="subtitle">
-        I'm a design leader with 10+ years of experience driving
-        cross-functional collaboration, product thinking & user impact.
-      </p>
-      <p>
-        <strong>
-          I believe in having strong opinions, loosely held. Let's work together
-          & challenge each other to deliver the greatest impact.
-        </strong>
-      </p>
-    </div>
-
-    <div class="feature cards">
-      <a href="/portfolio.html">
-        <div class="card card-one">
-          <h4 class="card-title">Portfolio</h4>
-          <p>Review a selection of past work, contributions, and impact.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a design leader who bridges strategy and execution. Over the past decade, I've owned end-to-end design processes at companies like <a href="https://www.airwallex.com" target="_blank" rel="noopener noreferrer">Airwallex</a>, <a href="https://www.expressvpn.com" target="_blank" rel="noopener noreferrer">ExpressVPN</a>, and <a href="https://www.dyson.com" target="_blank" rel="noopener noreferrer">Dyson</a>—from early research and hypothesis formation to shipped products and measurable outcomes.
+                    </p>
+                    <p>
+                        I specialize in making complexity simple. Whether it's building developer experiences, optimizing conversion flows, or designing embedded finance tools, I bring first-principles thinking and rigorous research to craft solutions that work for both users and the business. I also mentor designers and leverage AI as a partner in rapid prototyping and iteration.
+                    </p>
+                </div>
+            </div>
         </div>
-      </a>
-      <a href="about.html">
-        <div class="card card-two">
-          <h4 class="card-title">About Me</h4>
-          <p>Learn about my professional journey & growth.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <a class="project-card" href="project.html?project=dev-app">
+                    <div class="project-card-content">
+                        <h3 class="project-title">Defining a scalable analytics and diagnostics tool for developers</h3>
+                        <p class="project-description">Designing observability and diagnostics tools for developers to understand and troubleshoot issues, and go live more smoothly.</p>
+                        <div class="project-tags">
+                            <span class="tag">Developer Experience, Dashboards, AI tooling</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-card" href="project.html?project=disputes">
+                    <div class="project-card-content">
+                        <h3 class="project-title">Empowering merchants to manage complex transaction disputes</h3>
+                        <p class="project-description">Designing a comprehensive dispute management tool that empowers merchants to make informed decisions when managing disputes and reduce losses.</p>
+                        <div class="project-tags">
+                            <span class="tag">Payments, B2B, Service design</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-card" href="project.html?project=mobile-pos-terminal">
+                    <div class="project-card-content">
+                        <h3 class="project-title">Launching Airwallex's first-ever physical payments touchpoint</h3>
+                        <p class="project-description">Building the end-to-end experience for merchants to order, set up, and operate a mobile point-of-sale (POS) terminal to collect in-store payments.</p>
+                        <div class="project-tags">
+                            <span class="tag">Payments, B2B2C, Mobile App design</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-      </a>
-    </div>
+    </section>
 
-    <div class="full end-block end-text">
-      <p>
-        Leonard Chen (2023)
-        <span id="email" style="display: none">chen.junhuo@gmail.com</span>
-        <button
-          onClick="copyContent(); changeText('email-button', 'Copied!', 'Copy email');"
-          id="email-button"
-        >
-          Copy email
-        </button>
-      </p>
-    </div>
-  </body>
+    <!-- Writing Section -->
+    <section id="thoughts" class="thoughts">
+        <div class="container">
+            <h2 class="section-title">Writing</h2>
+            <div class="projects-grid">
+                <a class="project-card" href="on-building-a-portfolio.html">
+                    <div class="project-card-content">
+                        <h3 class="project-title">On building a portfolio website</h3>
+                        <p class="project-description">Why I chose simplicity over frameworks, restraint over spectacle, and what that says about my approach to design.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <script>
-    let text = document.getElementById("email").innerHTML;
-    const copyContent = async () => {
-      try {
-        await navigator.clipboard.writeText(text);
-        console.log("Content copied to clipboard");
-      } catch (err) {
-        console.error("Failed to copy: ", err);
-      }
-    };
-    function changeText(button, text, textToChangeBackTo) {
-      buttonId = document.getElementById(button);
-      buttonId.textContent = text;
-      setTimeout(function () {
-        back(buttonId, textToChangeBackTo);
-      }, 2000);
-      function back(button, textToChangeBackTo) {
-        button.textContent = textToChangeBackTo;
-      }
-    }
-  </script>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+            <div class="experience-content">
+                <div class="experience-row">
+                    <div class="experience-label">Experience</div>
+                    <div class="experience-items">
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://www.airwallex.com" target="_blank" rel="noopener noreferrer">Airwallex</a></p>
+                            <p class="item-secondary">Staff Product Designer</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://www.expressvpn.com" target="_blank" rel="noopener noreferrer">ExpressVPN</a></p>
+                            <p class="item-secondary">UX Design Manager</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://www.dyson.com" target="_blank" rel="noopener noreferrer">Dyson</a></p>
+                            <p class="item-secondary">Senior UX Researcher</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://www.tech.gov.sg/" target="_blank" rel="noopener noreferrer">Government Technology Agency of Singapore</a></p>
+                            <p class="item-secondary">Design Lead</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://www.psd.gov.sg/" target="_blank" rel="noopener noreferrer">Public Service Division (Singapore Civil Service)</a></p>
+                            <p class="item-secondary">Behavioural Insights Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div class="experience-label">Publications</div>
+                    <div class="experience-items">
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2016.01909/full" target="_blank" rel="noopener noreferrer">Expectations and decisions in the Volunteer's Dilemma</a></p>
+                            <p class="item-secondary">Frontiers in Psychology, 2016</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary"><a href="https://guilfordjournals.com/doi/10.1521/soco.2014.32.4.315" target="_blank" rel="noopener noreferrer">The first cut is the deepest: Projection and accuracy in social perception</a></p>
+                            <p class="item-secondary">Social Cognition, 2014</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div class="experience-label">Interests</div>
+                    <div class="experience-items">
+                        <div class="experience-item">
+                            <p class="item-primary">Building relationships, rituals, and processes for a mature design practice</p>
+                            <p class="item-secondary">Design leadership</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary">AI-assisted processes in design discovery and x-functional collaboration</p>
+                            <p class="item-secondary">AI-powered design</p>
+                        </div>
+                        <div class="experience-item">
+                            <p class="item-primary">Heuristics and the science of decision-making</p>
+                            <p class="item-secondary">Cognitive science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reach Out Section -->
+    <section id="reach-out" class="reach-out">
+        <div class="container">
+            <h2 class="section-title">Let's collaborate</h2>
+            <p class="reach-out-text">
+                To explore our next collaboration, reach out via 
+                <a href="mailto:chen.junhuo@gmail.com" class="email-link" id="email-link">email</a> or 
+                <a href="https://www.linkedin.com/in/leonard-chen/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made by Leonard Chen in San Francisco. Thank you for reading!</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
